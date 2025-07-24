@@ -21,7 +21,7 @@ const Index = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Bezmaksas uzstādīšana <span className="text-primary">un pielāgzozšana</span>
+                Bezmaksas uzstādīšana <span className="text-primary">un pielāgošana</span>
               </h1>
               
               <p className="text-muted-foreground text-lg">Pilnīgs CRM risinājums, kas apvieno komunikāciju, klientu vazdību un pārdošanas automatizāciju.</p>
