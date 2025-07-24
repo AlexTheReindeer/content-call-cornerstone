@@ -50,8 +50,8 @@
     --shadow-card: 0 4px 20px -4px hsl(var(--foreground) / 0.1);
 
     /* Button purple color */
-    --button-purple: 260 60% 73%;
-    --button-purple-foreground: 0 0% 100%;
+    --button-purple: 164 97% 53%;
+    --button-purple-foreground: 220 15% 15%;
 
     --radius: 0.5rem;
 
