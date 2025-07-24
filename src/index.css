@@ -49,6 +49,10 @@
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
     --shadow-card: 0 4px 20px -4px hsl(var(--foreground) / 0.1);
 
+    /* Button purple color */
+    --button-purple: 260 60% 73%;
+    --button-purple-foreground: 0 0% 100%;
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;

@@ -16,7 +16,7 @@ const Header = () => {
             <span className="font-semibold text-lg text-primary hidden md:inline-block">TGCallSoft</span>
           </div>
           
-          <Button variant="outline" size="sm" className="hidden md:flex">
+          <Button variant="purple" size="sm" className="hidden md:flex">
             <Phone className="w-4 h-4 mr-2" />
             Esmu ieinteresēts
           </Button>
