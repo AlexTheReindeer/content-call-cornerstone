@@ -18,7 +18,7 @@ const Header = () => {
           
           <Button variant="outline" size="sm" className="hidden md:flex">
             <Phone className="w-4 h-4 mr-2" />
-            Kontaktēt mūs
+            Esmu ieinteresēts
           </Button>
         </div>
       </div>
