@@ -31,7 +31,7 @@ const Index = () => {
                   <div className="w-5 h-5 bg-primary rounded-full mt-1 flex-shrink-0 flex items-center justify-center">
                     <div className="w-2 h-2 bg-primary-foreground rounded-full"></div>
                   </div>
-                  <span className="text-foreground font-medium">Beztermiņa līgums</span>
+                  <span className="text-foreground font-medium">Bezmaksas uzstādīšana un pielāgošana</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 bg-primary rounded-full mt-1 flex-shrink-0 flex items-center justify-center">
@@ -82,7 +82,7 @@ const Index = () => {
         {/* Case Studies Section */}
         <section className="container mx-auto px-6 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Klientu panākumu stāsti</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Klientu stāsti</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Uzziniet, kā TGCallSoft ir palīdzējis mūsu klientiem sasniegt savus biznesa mērķus.
             </p>
