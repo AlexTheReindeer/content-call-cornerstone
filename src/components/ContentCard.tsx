@@ -8,6 +8,7 @@ interface ContentCardProps {
   buttonText?: string;
   className?: string;
   icon?: React.ReactNode;
+  onButtonClick?: () => void;
 }
 
 const ContentCard = ({ 
@@ -15,7 +16,8 @@ const ContentCard = ({
   content, 
   buttonText = "Vairāk", 
   className = "",
-  icon
+  icon,
+  onButtonClick
 }: ContentCardProps) => {
   return (
     <Card className={`h-full shadow-card hover:shadow-elegant transition-all duration-300 hover:translate-y-[-5px] ${className}`}>
@@ -32,6 +34,7 @@ const ContentCard = ({
             variant="outline" 
             size="sm" 
             className="w-full hover:bg-primary hover:text-primary-foreground group transition-all duration-300"
+            onClick={onButtonClick}
           >
             {buttonText}
             <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
