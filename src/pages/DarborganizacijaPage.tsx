@@ -14,7 +14,7 @@ const DarborganizacijaPage = () => {
           <Link to="/">
             <Button variant="outline" size="sm" className="mb-4">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Atpakaļ uz sākumu
+              Uz sākumu
             </Button>
           </Link>
           
@@ -68,7 +68,7 @@ const DarborganizacijaPage = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileText className="h-5 w-5 text-primary" />
-                  Atskaites un analītika
+                  Atskaites un analītikas
                 </CardTitle>
               </CardHeader>
               <CardContent>
