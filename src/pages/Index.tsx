@@ -109,7 +109,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Case Studies Section */}
+        {/* Client Testimonials Section */}
         <section className="container mx-auto px-6 py-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Klientu stāsti</h2>
@@ -118,48 +118,121 @@ const Index = () => {
             </p>
           </div>
           
-          <Card className="shadow-elegant overflow-hidden border border-border/40 hover:shadow-card transition-all duration-300">
-            <CardContent className="p-0">
-              <div className="grid lg:grid-cols-2 gap-0">
-                <div className="bg-gradient-secondary p-12 lg:p-16 flex items-center justify-center min-h-[300px]">
-                  <div className="text-center lg:text-left">
-                    <h3 className="text-2xl font-bold mb-6 text-secondary-foreground">
-                      Klienta pieredzes video
-                    </h3>
-                    <p className="text-secondary-foreground/80 mb-6">
-                      Noskatieties, kā mūsu klienti izmanto TGCallSoft, lai uzlabotu savu biznesu.
-                    </p>
-                    <Button variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30">
-                      Skatīt video
-                    </Button>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Testimonial 1 */}
+            <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">SIA</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">TechSolutions</h4>
+                    <p className="text-sm text-muted-foreground">IT pakalpojumi</p>
                   </div>
                 </div>
-                
-                <div className="p-12 lg:p-16">
-                  <h3 className="text-2xl font-bold mb-6 text-foreground">Klientu atsauksmes</h3>
-                  <div className="space-y-6">
-                    <div className="border-l-4 border-primary pl-4 py-2">
-                      <p className="text-muted-foreground italic">
-                        "TGCallSoft ļāva mums apvienot visus klientu komunikācijas kanālus vienā platformā, kas ievērojami uzlaboja mūsu klientu apkalpošanas kvalitāti un efektivitāti."
-                      </p>
-                      <p className="text-sm font-medium mt-2">- Jānis Bērziņš, IT direktors</p>
-                    </div>
-                    
-                    <div className="border-l-4 border-primary pl-4 py-2">
-                      <p className="text-muted-foreground italic">
-                        "Kopš ieviešām TGCallSoft, mūsu pārdošanas rādītāji ir pieauguši par 25%, un klientu apmierinātība ir uzlabojusies par 30%."
-                      </p>
-                      <p className="text-sm font-medium mt-2">- Anna Kalniņa, Pārdošanas vadītāja</p>
-                    </div>
-                    
-                    <Button variant="link" className="p-0 h-auto text-primary">
-                      Lasīt vairāk atsauksmes
-                    </Button>
+                <p className="text-muted-foreground italic mb-4">
+                  "TGCallSoft ļāva mums apvienot visus klientu komunikācijas kanālus vienā platformā, kas ievērojami uzlaboja mūsu klientu apkalpošanas kvalitāti un efektivitāti."
+                </p>
+                <p className="text-sm font-medium text-primary">- Jānis Bērziņš, IT direktors</p>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 2 */}
+            <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">AS</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Baltic Sales</h4>
+                    <p className="text-sm text-muted-foreground">Tirdzniecība</p>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+                <p className="text-muted-foreground italic mb-4">
+                  "Kopš ieviešām TGCallSoft, mūsu pārdošanas rādītāji ir pieauguši par 25%, un klientu apmierinātība ir uzlabojusies par 30%."
+                </p>
+                <p className="text-sm font-medium text-primary">- Anna Kalniņa, Pārdošanas vadītāja</p>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 3 */}
+            <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">SIA</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">MediCare+</h4>
+                    <p className="text-sm text-muted-foreground">Veselības aprūpe</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-4">
+                  "TGCallSoft automatizācija ļauj mums efektīvāk plānot pacienta vizītes un nodrošināt laicīgus atgādinājumus, kas samazina kavētos vizīšu skaitu."
+                </p>
+                <p className="text-sm font-medium text-primary">- Dr. Mārtiņš Ozols, Klīnikas vadītājs</p>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 4 */}
+            <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">SIA</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">BeautyStudio</h4>
+                    <p className="text-sm text-muted-foreground">Skaistumkopšana</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-4">
+                  "Pateicoties TGCallSoft, mūsu klienti var viegli rezervēt laikus online, un mēs varam labāk pārvaldīt savu darba grafiku."
+                </p>
+                <p className="text-sm font-medium text-primary">- Linda Sproģe, Salona īpašniece</p>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 5 */}
+            <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">AS</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">AutoService Pro</h4>
+                    <p className="text-sm text-muted-foreground">Auto serviss</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-4">
+                  "TGCallSoft integrācija ar WhatsApp ļauj mums ātri komunicēt ar klientiem par remonta gaitu un nepieciešamajām rezerves daļām."
+                </p>
+                <p className="text-sm font-medium text-primary">- Andrejs Liepa, Servisa vadītājs</p>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 6 */}
+            <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">SIA</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">EduCenter</h4>
+                    <p className="text-sm text-muted-foreground">Izglītība</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic mb-4">
+                  "Ar TGCallSoft mēs varam viegli koordinēt kursus, informēt studentus par izmaiņām un saņemt atsauksmes par mācību kvalitāti."
+                </p>
+                <p className="text-sm font-medium text-primary">- Ieva Krūmiņa, Izglītības direktore</p>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* Stats Section */}
