@@ -119,117 +119,93 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Testimonial 1 */}
+            {/* Testimonial 1 - Latvijas Loto */}
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-lg">SIA</span>
+                    <span className="text-primary font-bold text-sm">LL</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">TechSolutions</h4>
-                    <p className="text-sm text-muted-foreground">IT pakalpojumi</p>
+                    <h4 className="font-semibold text-foreground">Latvijas Loto</h4>
+                    <p className="text-sm text-muted-foreground">Valsts izlozes</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-4">
-                  "TGCallSoft ļāva mums apvienot visus klientu komunikācijas kanālus vienā platformā, kas ievērojami uzlaboja mūsu klientu apkalpošanas kvalitāti un efektivitāti."
+                  "Valsts mēroga izložu, tai skaitā interaktīvo izložu, organizēšana, laimestu apstrāde un izmaksa,organizēšana un pārdošana tiešsaistes režīmā internetā. Jau vairākus gadus izmantojam saziņai un sarunu apstrādei TBCallSoft."
                 </p>
-                <p className="text-sm font-medium text-primary">- Jānis Bērziņš, IT direktors</p>
               </CardContent>
             </Card>
 
-            {/* Testimonial 2 */}
+            {/* Testimonial 2 - VCA poliklīnika */}
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-lg">AS</span>
+                    <span className="text-primary font-bold text-sm">VCA</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Baltic Sales</h4>
-                    <p className="text-sm text-muted-foreground">Tirdzniecība</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground italic mb-4">
-                  "Kopš ieviešām TGCallSoft, mūsu pārdošanas rādītāji ir pieauguši par 25%, un klientu apmierinātība ir uzlabojusies par 30%."
-                </p>
-                <p className="text-sm font-medium text-primary">- Anna Kalniņa, Pārdošanas vadītāja</p>
-              </CardContent>
-            </Card>
-
-            {/* Testimonial 3 */}
-            <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-lg">SIA</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">MediCare+</h4>
+                    <h4 className="font-semibold text-foreground">VCA poliklīnika</h4>
                     <p className="text-sm text-muted-foreground">Veselības aprūpe</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-4">
-                  "TGCallSoft automatizācija ļauj mums efektīvāk plānot pacienta vizītes un nodrošināt laicīgus atgādinājumus, kas samazina kavētos vizīšu skaitu."
+                  "Veselības centru apvienība (VCA) ir viens no lielākajiem privātās veselības aprūpes uzņēmumiem Latvijā. Tas piedāvā medicīnas pakalpojumus Rīgā un lielākajās reģionu pilsētās. Lai apstrādātu ienākošo komunikāciju ir ieviests TBCallSoft, kas lieliski pilda saziņu ar pacientiem."
                 </p>
-                <p className="text-sm font-medium text-primary">- Dr. Mārtiņš Ozols, Klīnikas vadītājs</p>
               </CardContent>
             </Card>
 
-            {/* Testimonial 4 */}
+            {/* Testimonial 3 - Centrālā Laboratorija */}
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-lg">SIA</span>
+                    <span className="text-primary font-bold text-sm">CL</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">BeautyStudio</h4>
-                    <p className="text-sm text-muted-foreground">Skaistumkopšana</p>
+                    <h4 className="font-semibold text-foreground">Centrālā Laboratorija</h4>
+                    <p className="text-sm text-muted-foreground">Medicīnas laboratorija</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-4">
-                  "Pateicoties TGCallSoft, mūsu klienti var viegli rezervēt laikus online, un mēs varam labāk pārvaldīt savu darba grafiku."
+                  "Kā viena no vadošajām Latvijas laboratorijām, rūpīgi izvērtējam sadarbības partnerus, ar TBCallSoft sākām sadarbību Covid-19 pašā pīķī, kad vitāli svarīgi bija ieviest risinājumu, lai operatori zvanus varētu apkalpot no mājām un jebkuru strādājošu telefonu."
                 </p>
-                <p className="text-sm font-medium text-primary">- Linda Sproģe, Salona īpašniece</p>
               </CardContent>
             </Card>
 
-            {/* Testimonial 5 */}
+            {/* Testimonial 4 - Latvijas televīzija */}
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-lg">AS</span>
+                    <span className="text-primary font-bold text-sm">LTV</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">AutoService Pro</h4>
-                    <p className="text-sm text-muted-foreground">Auto serviss</p>
+                    <h4 className="font-semibold text-foreground">Latvijas televīzija</h4>
+                    <p className="text-sm text-muted-foreground">Sabiedriskā raidorganizācija</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-4">
-                  "TGCallSoft integrācija ar WhatsApp ļauj mums ātri komunicēt ar klientiem par remonta gaitu un nepieciešamajām rezerves daļām."
+                  "Latvijas Televīzija ir sabiedriska raidorganizācija, kas atspoguļo un līdzdarbojoties veido Latvijas sabiedrības dienaskārtību. TBCallSoft esam ierīkojuši jau vairākus gadus, izmantojam zvanu robotu darbinieku apziņošanai, SMS izsūtni dažādos projektos un citas softā iekļautos moduļus."
                 </p>
-                <p className="text-sm font-medium text-primary">- Andrejs Liepa, Servisa vadītājs</p>
               </CardContent>
             </Card>
 
-            {/* Testimonial 6 */}
+            {/* Testimonial 5 - Rīgas veselības centrs */}
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-lg">SIA</span>
+                    <span className="text-primary font-bold text-sm">RVC</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">EduCenter</h4>
-                    <p className="text-sm text-muted-foreground">Izglītība</p>
+                    <h4 className="font-semibold text-foreground">Rīgas veselības centrs</h4>
+                    <p className="text-sm text-muted-foreground">Pašvaldības veselības centrs</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground italic mb-4">
-                  "Ar TGCallSoft mēs varam viegli koordinēt kursus, informēt studentus par izmaiņām un saņemt atsauksmes par mācību kvalitāti."
+                  "SIA 'Rīgas veselības centrs' ir 100% apmērā Rīgas pašvaldībai piederoša kapitālsabiedrība ar vairākas desmitgades ilgu pieredzi veselības aprūpes pakalpojumu sniegšanā. Ieviesām TBCallSoft, lai apvienotu vairākus komunikāciju kanālus no visām mūsu ārstniecības iestādēm, saziņai ar pacientiem viņiem ērtā komunikāciju kanālā."
                 </p>
-                <p className="text-sm font-medium text-primary">- Ieva Krūmiņa, Izglītības direktore</p>
               </CardContent>
             </Card>
           </div>
