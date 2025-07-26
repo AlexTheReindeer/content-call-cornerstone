@@ -1,4 +1,4 @@
-import teleGroupLogo from "@/assets/telegroup-new-logo.png";
+import teleGroupLogo from "@/assets/telegroup-logo.png";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
