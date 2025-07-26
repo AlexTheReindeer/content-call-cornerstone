@@ -11,7 +11,7 @@ const Header = () => {
             <img 
               src={teleGroupLogo} 
               alt="TeleGroup" 
-              className="h-12 w-auto"
+              className="h-24 w-auto"
             />
           </div>
           
