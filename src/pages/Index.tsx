@@ -48,6 +48,18 @@ const Index = () => {
                   </div>
                   <span className="text-foreground font-medium">Pieredze ES fondu piesaistē</span>
                 </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 bg-primary rounded-full mt-1 flex-shrink-0 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-primary-foreground rounded-full"></div>
+                  </div>
+                  <span className="text-foreground font-medium">24/7 tehniskais atbalsts</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 bg-primary rounded-full mt-1 flex-shrink-0 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-primary-foreground rounded-full"></div>
+                  </div>
+                  <span className="text-foreground font-medium">Datu drošība un atbilstība GDPR</span>
+                </div>
               </div>
               
               <div className="pt-4">
