@@ -9,6 +9,7 @@ import teleGroupLogo from "@/assets/telegroup-logo.png";
 import latvijasloto from "@/assets/logos/latvijas-loto-logo.png";
 import vcaLogo from "@/assets/logos/vca-logo.png";
 import vcaRealLogo from "@/assets/logos/vca-real-logo.png";
+import centralaLogo from "@/assets/logos/centrala-laboratorija-logo.png";
 const Index = () => {
   const navigate = useNavigate();
 
@@ -158,8 +159,8 @@ const Index = () => {
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-sm">CL</span>
+                  <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center p-1">
+                    <img src={centralaLogo} alt="Centrālā Laboratorija" className="w-full h-full object-contain" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Centrālā Laboratorija</h4>
