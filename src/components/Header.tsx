@@ -1,4 +1,4 @@
-import teleGroupLogo from "@/assets/telegroup-logo.png";
+import teleGroupLogo from "@/assets/telegroup-new-logo.png";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -7,13 +7,12 @@ const Header = () => {
     <header className="w-full bg-card border-b border-border shadow-card sticky top-0 z-50">
       <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <img 
               src={teleGroupLogo} 
               alt="TeleGroup" 
               className="h-12 w-auto"
             />
-            <span className="font-semibold text-lg text-primary hidden md:inline-block">TGCallSoft</span>
           </div>
           
           <Button variant="purple" size="sm" className="hidden md:flex">
