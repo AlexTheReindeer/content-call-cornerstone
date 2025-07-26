@@ -6,7 +6,7 @@ import ContentCard from "@/components/ContentCard";
 import { Calendar, Phone, MessageSquare, Users, BarChart3 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import teleGroupLogo from "@/assets/telegroup-logo.png";
-import latvijasloto from "@/assets/logos/latvijas-loto-logo.png";
+import latvijaslotoOfficial from "@/assets/logos/latvijas-loto-official.svg";
 import vcaLogo from "@/assets/logos/vca-logo.png";
 import vcaRealLogo from "@/assets/logos/vca-real-logo.png";
 import centralaLogo from "@/assets/logos/centrala-laboratorija-logo.png";
@@ -127,7 +127,7 @@ const Index = () => {
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <img src={latvijasloto} alt="Latvijas Loto" className="w-12 h-12 object-contain" />
+                  <img src={latvijaslotoOfficial} alt="Latvijas Loto" className="w-12 h-12 object-contain" />
                   <div>
                     <h4 className="font-semibold text-foreground">Latvijas Loto</h4>
                     <p className="text-sm text-muted-foreground">Valsts izlozes</p>
