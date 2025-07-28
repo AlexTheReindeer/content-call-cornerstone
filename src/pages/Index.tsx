@@ -83,7 +83,7 @@ const Index = () => {
         {/* Content Cards Section */}
         <section className="container mx-auto px-6 py-16 bg-accent/50">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Galvenās funkcijas</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Galvenie ieguvumi</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               TGCallSoft nodrošina plašu funkciju klāstu, lai uzlabotu jūsu biznesa procesus un klientu apkalpošanas kvalitāti.
             </p>
