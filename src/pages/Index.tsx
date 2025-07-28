@@ -5,7 +5,7 @@ import CRMDiagram from "@/components/CRMDiagram";
 import ContentCard from "@/components/ContentCard";
 import { Calendar, Phone, MessageSquare, Users, BarChart3 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import teleGroupLogo from "@/assets/telegroup-logo.png";
+import teleGroupLogo from "@/assets/telegroup-new-logo.png";
 import latvijaslotoOfficial from "@/assets/logos/latvijas-loto-official.svg";
 import vcaLogo from "@/assets/logos/vca-logo.png";
 import vcaRealLogo from "@/assets/logos/vca-real-logo.png";
@@ -233,12 +233,11 @@ const Index = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold text-foreground mb-4">Produkts</h4>
+              <h4 className="font-semibold text-foreground mb-4">Pakalpojumi</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Funkcijas</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Cenas</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Integrācijas</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Atbalsts</a></li>
+                <li><a href="https://www.telegroup.lv/lv/sakaru-pakalpojumi/fiksetie-telefonijas-sakari/" className="text-muted-foreground hover:text-primary transition-colors">Sakaru pakalpojumi</a></li>
+                <li><a href="https://www.telegroup.lv/lv/internets/internets/" className="text-muted-foreground hover:text-primary transition-colors">Internets</a></li>
+                <li><a href="https://www.telegroup.lv/lv/iekartas-un-tehniskie-risinajumi/ip-pbx-telefonijas-centrale/" className="text-muted-foreground hover:text-primary transition-colors">IP PBX centrāle</a></li>
               </ul>
             </div>
             
@@ -246,8 +245,6 @@ const Index = () => {
               <h4 className="font-semibold text-foreground mb-4">Uzņēmums</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Par mums</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Karjera</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Blogs</a></li>
                 <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Kontakti</a></li>
               </ul>
             </div>
@@ -256,10 +253,10 @@ const Index = () => {
               <h4 className="font-semibold text-foreground mb-4">Kontakti</h4>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2 text-muted-foreground">
-                  <Phone className="h-4 w-4" /> +371 XXXXXXXX
+                  <Phone className="h-4 w-4" /> +371 677 99 000
                 </li>
                 <li className="flex items-center gap-2 text-muted-foreground">
-                  <MessageSquare className="h-4 w-4" /> info@tgcallsoft.lv
+                  <MessageSquare className="h-4 w-4" /> info@telegroup.lv
                 </li>
               </ul>
             </div>
