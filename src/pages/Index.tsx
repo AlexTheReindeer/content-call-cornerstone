@@ -267,7 +267,7 @@ const Index = () => {
           
           <div className="mt-12 pt-6 border-t border-border/40 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} TGCallSoft. Visas tiesības aizsargātas.
+              © {new Date().getFullYear()} Telegrupa Baltijā SIA. Visas tiesības aizsargātas.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Lietošanas noteikumi</a>
