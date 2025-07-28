@@ -66,12 +66,6 @@ const Index = () => {
                   <span className="text-foreground font-medium">Individuāla pieeja un risinājumi</span>
                 </div>
               </div>
-              
-              <div className="pt-4">
-                <Button size="lg" className="rounded-full shadow-elegant">
-                  Uzzināt vairāk
-                </Button>
-              </div>
             </div>
 
             {/* Right side - CRM Diagram */}
