@@ -13,7 +13,6 @@ import centralaLogo from "@/assets/logos/centrala-laboratorija-logo.png";
 import ltvLogo from "@/assets/logos/ltv-official-logo.png";
 const Index = () => {
   const navigate = useNavigate();
-
   return <div className="min-h-screen bg-gradient-hero">
       <Header />
       
@@ -32,7 +31,7 @@ const Index = () => {
                 Uzlabo saikni ar klientiem <span className="text-primary">ar TGCallSoft</span>
               </h1>
               
-              <p className="text-muted-foreground text-lg">Pilnīgs CRM risinājums, kas apvieno komunikāciju, klientu vazdību un pārdošanas automatizāciju.</p>
+              <p className="text-muted-foreground text-lg">Komplekss CRM risinājums, kas apvieno komunikāciju, klientu vadību un pārdošanas automatizāciju.</p>
               
               <div className="space-y-4 text-lg pt-4">
                 <div className="flex items-start gap-3">
@@ -91,26 +90,11 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <ContentCard 
-              title="Komunikāciju kanāli" 
-              content="Visi komunikācijas kanāli vienuviet. Multikanālu rīks, kas apvieno dažādu komunikācijas kanālu ziņas: Zvani, SMS, WhatsApp, e-pasti, Telegram. Integrācijas ar ML risinājumiem." 
-              icon={<MessageSquare className="h-6 w-6 text-primary" />}
-              onButtonClick={() => navigate('/komunikacija')}
-            />
+            <ContentCard title="Komunikāciju kanāli" content="Visi komunikācijas kanāli vienuviet. Multikanālu rīks, kas apvieno dažādu komunikācijas kanālu ziņas: Zvani, SMS, WhatsApp, e-pasti, Telegram. Integrācijas ar ML risinājumiem." icon={<MessageSquare className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/komunikacija')} />
             
-            <ContentCard 
-              title="Darborganizācija" 
-              content="Organizē un plāno darbus un informē klientus. Kalendārs darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, un daudz vairāk." 
-              icon={<Calendar className="h-6 w-6 text-primary" />}
-              onButtonClick={() => navigate('/darborganizacija')}
-            />
+            <ContentCard title="Darborganizācija" content="Organizē un plāno darbus un informē klientus. Kalendārs darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, un daudz vairāk." icon={<Calendar className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/darborganizacija')} />
             
-            <ContentCard 
-              title="Online klientu apkalpošana" 
-              content="Piesaisti klientus online. Online reģistrācija ar vai bez priekšapmaksas, klientu pašapkalpošanās portāls, un citas iespējas." 
-              icon={<Users className="h-6 w-6 text-primary" />}
-              onButtonClick={() => navigate('/online-apkalpojana')}
-            />
+            <ContentCard title="Online klientu apkalpošana" content="Piesaisti klientus online. Online reģistrācija ar vai bez priekšapmaksas, klientu pašapkalpošanās portāls, un citas iespējas." icon={<Users className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/online-apkalpojana')} />
           </div>
         </section>
 
