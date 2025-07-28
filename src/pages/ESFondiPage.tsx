@@ -26,56 +26,37 @@ const ESFondiPage = () => {
           </div>
         </div>
 
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold text-foreground mb-4">ES fondu apgūšana</h2>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Target className="h-5 w-5 text-primary" />
-                  Projektu sagatavošana
+                  Atbalsts procesu digitalizācijā
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Mūsu eksperti palīdzēs sagatavot un iesniegt ES fondu projektus. Pilns atbalsts 
-                  no idejas līdz projekta īstenošanai.
+                  Latvijas uzņēmējiem no 2025. gada jūlija beigām būs pieejams jauns atbalsta instruments uzņēmumu procesu digitalizācijai ar kopējo atbalsta finansējumu vairāk nekā 18,5 miljonu eiro apmērā, ko īstenos Latvijas Investīciju un attīstības aģentūra (LIAA).
                 </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Projekta idejas izvērtēšana</li>
-                  <li>• Dokumentācijas sagatavošana</li>
-                  <li>• Budžeta plānošana</li>
-                  <li>• Pieteikuma iesniegšana</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <FileCheck className="h-5 w-5 text-primary" />
-                  Projektu vadība
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Profesionāla projektu vadība un īstenošanas atbalsts. Nodrošināsim, 
-                  ka projekts tiek īstenots atbilstoši plānam un prasībām.
+                <p className="text-muted-foreground mb-4">
+                  SIA Telegrupa Baltijā speciālistiem ir ļoti liela pieredze ES fondu piesaistē caur dažādā programmām, tajā skaitā tieši "Atbalsta procesu digitalizācijā" atbalsta programmu. Mūsu speciālist uz abpusēji izdevīgiem nosacījumiem ir gatavi palīdzēt projektu izstrādē, dokumentācijas sagatavošanā un turpmākā projekta vadībā.
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Euro className="h-5 w-5 text-primary" />
-                  Finansiālā pārvaldība
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Precīza finansiālā uzskaite un atskaišu sagatavošana ES fondu projektiem. 
-                  Nodrošinām atbilstību visām finansiālajām prasībām.
+                <p className="text-muted-foreground mb-4">
+                  Šobrīd pieejamā programmas atbalsta intensitāte – 50%, vidējiem 40% un mazas vidējas un vidējas kapitalizācijas sabiedrībām – 30%.
                 </p>
+                <a 
+                  href="https://www.liaa.gov.lv/lv/programmas/atbalsts-procesu-digitalizacijai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline text-sm"
+                >
+                  Uzzināt vairāk LIAA mājas lapā →
+                </a>
               </CardContent>
             </Card>
           </div>
@@ -84,53 +65,20 @@ const ESFondiPage = () => {
             <Card className="shadow-card bg-gradient-secondary">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-secondary-foreground mb-4">
-                  Mūsu pieredze
+                  Risinājumu izmēģināšana – Test before Invest
                 </h3>
+                <p className="text-secondary-foreground/90 mb-4">
+                  Eiropas Digitālās inovācijas centra atbalsta progrmmā Risinājumu izmēģināšana vai Test before Invest ietvaros iespējams TGCallSoft platormu lietot sešu mēnešus pilnīgi bez maksas.
+                </p>
+                <p className="text-secondary-foreground/90 mb-4">
+                  Mūsu speciālisti palīdzēs sakārtot visu nepieciešamo dokumentāciju, līgumus un citas formalitātes, lai saņemtu šo atbalstu.
+                </p>
                 <p className="text-secondary-foreground/90 mb-6">
-                  Vairāk nekā 10 gadu pieredze ES fondu projektu īstenošanā. Esam veiksmīgi 
-                  piesaistījuši finansējumu dažādos sektoros un uzņēmumu izmēros.
+                  <strong>Atbalsta intensitāte – 100%.</strong>
                 </p>
                 <Button variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30">
-                  Skatīt veiksmīgos projektus
+                  Pieteikties testēšanai
                 </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Users2 className="h-5 w-5 text-primary" />
-                  Mūsu ekspertu komanda
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Pieredzējuši ES fondu eksperti, kuri pārzina aktuālās prasības un 
-                  tendences fondu piesaistē.
-                </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Sertificēti projektu vadītāji</li>
-                  <li>• Finanšu eksperti</li>
-                  <li>• Juridiskais atbalsts</li>
-                  <li>• Tehniskā konsultācija</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle>Pieejamie fondi 2024</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Aktuālā informācija par pieejamajiem ES fondiem un to iespējām.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• ERAF - Eiropas Reģionālās attīstības fonds</li>
-                  <li>• ESF+ - Eiropas Sociālais fonds Plus</li>
-                  <li>• ELFLA - Eiropas Lauksaimniecības fonds</li>
-                  <li>• Horizon Europe - Pētniecības un inovāciju programma</li>
-                </ul>
               </CardContent>
             </Card>
           </div>
