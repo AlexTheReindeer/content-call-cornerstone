@@ -11,7 +11,7 @@ import vcaLogo from "@/assets/logos/vca-logo.png";
 import vcaRealLogo from "@/assets/logos/vca-real-logo.png";
 import centralaLogo from "@/assets/logos/centrala-laboratorija-logo.png";
 import ltvLogo from "@/assets/logos/ltv-official-logo.png";
-import rigasVeselibasLogo from "@/assets/rigas-veselibas-centrs-logo.jpg";
+import rigasVeselibasLogo from "/lovable-uploads/be06b95e-e6a0-4465-9443-b95fd903e0ba.png";
 const Index = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen bg-gradient-hero">
