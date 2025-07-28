@@ -244,8 +244,8 @@ const Index = () => {
             <div>
               <h4 className="font-semibold text-foreground mb-4">Uzņēmums</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Par mums</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Kontakti</a></li>
+                <li><a href="https://www.telegroup.lv/lv/par-kompaniju/" className="text-muted-foreground hover:text-primary transition-colors">Par mums</a></li>
+                <li><a href="https://www.telegroup.lv/lv/kontakti/" className="text-muted-foreground hover:text-primary transition-colors">Kontakti</a></li>
               </ul>
             </div>
             
@@ -267,9 +267,7 @@ const Index = () => {
               © {new Date().getFullYear()} Telegrupa Baltijā SIA. Visas tiesības aizsargātas.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Lietošanas noteikumi</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Privātuma politika</a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Sīkdatnes</a>
+              <a href="https://www.telegroup.lv/lv/lietosanas-noteikumi/" className="text-muted-foreground hover:text-primary transition-colors text-sm">Lietošanas noteikumi</a>
             </div>
           </div>
         </div>
