@@ -194,28 +194,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section className="container mx-auto px-6 py-12 bg-card border-y border-border/40">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="text-4xl font-bold text-primary mb-2">500+</p>
-              <p className="text-muted-foreground">Apmierināti klienti</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-primary mb-2">98%</p>
-              <p className="text-muted-foreground">Klientu apmierinātība</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-primary mb-2">24/7</p>
-              <p className="text-muted-foreground">Tehniskais atbalsts</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-primary mb-2">10+ gadi</p>
-              <p className="text-muted-foreground">Pieredze nozarē</p>
-            </div>
-          </div>
-        </section>
-
         {/* Call to Action Section */}
         <section className="container mx-auto px-6 py-16 text-center">
           <Card className="max-w-3xl mx-auto shadow-elegant bg-gradient-primary rounded-3xl border-none overflow-hidden hover-scale">
