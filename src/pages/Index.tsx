@@ -165,7 +165,7 @@ const Index = () => {
                 <div className="flex items-center gap-3 mb-4">
                   <img src={ltvLogo} alt="Latvijas televīzija" className="w-12 h-12 object-contain" />
                   <div>
-                    <h4 className="font-semibold text-foreground">Latvijas televīzija</h4>
+                    <h4 className="font-semibold text-foreground">Latvijas televīzija (šobrīd SIA "Latvijas Sabiedriskais medijs")</h4>
                     <p className="text-sm text-muted-foreground">Sabiedriskā raidorganizācija</p>
                   </div>
                 </div>
