@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ContentCardProps {
   title: string;
@@ -9,6 +10,7 @@ interface ContentCardProps {
   className?: string;
   icon?: React.ReactNode;
   onButtonClick?: () => void;
+  navigateTo?: string;
 }
 
 const ContentCard = ({ 
@@ -17,8 +19,18 @@ const ContentCard = ({
   buttonText = "Vairāk", 
   className = "",
   icon,
-  onButtonClick
+  onButtonClick,
+  navigateTo
 }: ContentCardProps) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (navigateTo) {
+      navigate(navigateTo);
+    } else if (onButtonClick) {
+      onButtonClick();
+    }
+  };
   return (
     <Card className={`h-full shadow-card hover:shadow-elegant transition-all duration-300 hover:translate-y-[-5px] ${className}`}>
       <CardContent className="p-8 h-full flex flex-col">
@@ -34,7 +46,7 @@ const ContentCard = ({
             variant="outline" 
             size="sm" 
             className="w-full hover:bg-primary hover:text-primary-foreground group transition-all duration-300"
-            onClick={onButtonClick}
+            onClick={handleClick}
           >
             {buttonText}
             <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
