@@ -92,7 +92,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <ContentCard title="Komunikāciju kanāli" content="Visi komunikācijas kanāli vienuviet. Multikanālu rīks, kas apvieno dažādu komunikācijas kanālu ziņas: Zvani, SMS, WhatsApp, e-pasti, Telegram. Integrācijas ar ML risinājumiem." icon={<MessageSquare className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/komunikacija')} />
             
-            <ContentCard title="Darborganizācija" content="Organizē un plāno darbus un informē klientus. Kalendārs darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, un daudz vairāk." icon={<Calendar className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/darborganizacija')} />
+            <ContentCard title="Darborganizācija" content="Organizē un plāno darbus un informē klientus par gaidāmām vizītēm un tikšanām. Kalendārds darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, utt Piesaisti klientus tiešsaistē 24/7" icon={<Calendar className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/darborganizacija')} />
             
             <ContentCard title="Online klientu apkalpošana" content="Piesaisti klientus online. Online reģistrācija ar vai bez priekšapmaksas, klientu pašapkalpošanās portāls, un citas iespējas." icon={<Users className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/online-apkalpojana')} />
           </div>
