@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import CRMDiagram from "@/components/CRMDiagram";
 import ContentCard from "@/components/ContentCard";
+import RegistrationModal from "@/components/RegistrationModal";
 import { Calendar, Phone, MessageSquare, Users, BarChart3 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import teleGroupLogo from "@/assets/telegroup-new-logo.png";
@@ -14,6 +16,7 @@ import ltvLogo from "@/assets/logos/ltv-official-logo.png";
 import rigasVeselibasLogo from "/lovable-uploads/be06b95e-e6a0-4465-9443-b95fd903e0ba.png";
 const Index = () => {
   const navigate = useNavigate();
+  const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
   return <div className="min-h-screen bg-gradient-hero">
       <Header />
       
@@ -85,11 +88,29 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <ContentCard title="Komunikāciju kanāli" content="Visi komunikācijas kanāli vienuviet. Multikanālu rīks, kas apvieno dažādu komunikācijas kanālu ziņas: Zvani, SMS, WhatsApp, e-pasti, Telegram. Integrācijas ar ML risinājumiem." icon={<MessageSquare className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/komunikacija')} />
+            <ContentCard 
+              title="Komunikāciju kanāli" 
+              content="Visi komunikācijas kanāli vienuviet. Multikanālu rīks, kas apvieno dažādu komunikācijas kanālu ziņas: Zvani, SMS, WhatsApp, e-pasti, Telegram. Integrācijas ar ML risinājumiem." 
+              icon={<MessageSquare className="h-6 w-6 text-primary" />} 
+              buttonText="Esmu ieinteresēts"
+              onButtonClick={() => setIsRegistrationModalOpen(true)} 
+            />
             
-            <ContentCard title="Darborganizācija" content="Organizē un plāno darbus un informē klientus par gaidāmām vizītēm un tikšanām. Kalendārds darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, utt Piesaisti klientus tiešsaistē 24/7" icon={<Calendar className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/darborganizacija')} />
+            <ContentCard 
+              title="Darborganizācija" 
+              content="Organizē un plāno darbus un informē klientus par gaidāmām vizītēm un tikšanām. Kalendārds darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, utt Piesaisti klientus tiešsaistē 24/7" 
+              icon={<Calendar className="h-6 w-6 text-primary" />} 
+              buttonText="Esmu ieinteresēts"
+              onButtonClick={() => setIsRegistrationModalOpen(true)} 
+            />
             
-            <ContentCard title="ES fondi" content="Mūsu plašā pieredze Eiropas Savienības fondu piesaistē un apgūšanā var palīdzēt veicināt jūsu biznesa izaugsmi, piesaistot Eiropas finansējumu. Nodrošināsim atbalstu gan projekta sagatavošanā un dokumentu iesniegšanā, gan arī tā īstenošanas laikā." icon={<BarChart3 className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/online-apkalpojana')} />
+            <ContentCard 
+              title="ES fondi" 
+              content="Mūsu plašā pieredze Eiropas Savienības fondu piesaistē un apgūšanā var palīdzēt veicināt jūsu biznesa izaugsmi, piesaistot Eiropas finansējumu. Nodrošināsim atbalstu gan projekta sagatavošanā un dokumentu iesniegšanā, gan arī tā īstenošanas laikā." 
+              icon={<BarChart3 className="h-6 w-6 text-primary" />} 
+              buttonText="Esmu ieinteresēts"
+              onButtonClick={() => setIsRegistrationModalOpen(true)} 
+            />
           </div>
         </section>
 
@@ -267,6 +288,11 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      <RegistrationModal 
+        open={isRegistrationModalOpen} 
+        onOpenChange={setIsRegistrationModalOpen} 
+      />
     </div>;
 };
 export default Index;
