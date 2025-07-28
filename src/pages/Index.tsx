@@ -94,7 +94,7 @@ const Index = () => {
             
             <ContentCard title="Darborganizācija" content="Organizē un plāno darbus un informē klientus par gaidāmām vizītēm un tikšanām. Kalendārds darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, utt Piesaisti klientus tiešsaistē 24/7" icon={<Calendar className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/darborganizacija')} />
             
-            <ContentCard title="Online klientu apkalpošana" content="Piesaisti klientus online. Online reģistrācija ar vai bez priekšapmaksas, klientu pašapkalpošanās portāls, un citas iespējas." icon={<Users className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/online-apkalpojana')} />
+            <ContentCard title="ES fondi" content="Mūsu plašā pieredze Eiropas Savienības fondu piesaistē un apgūšanā var palīdzēt veicināt jūsu biznesa izaugsmi, piesaistot Eiropas finansējumu. Nodrošināsim atbalstu gan projekta sagatavošanā un dokumentu iesniegšanā, gan arī tā īstenošanas laikā." icon={<BarChart3 className="h-6 w-6 text-primary" />} onButtonClick={() => navigate('/online-apkalpojana')} />
           </div>
         </section>
 
