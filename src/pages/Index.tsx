@@ -11,6 +11,7 @@ import vcaLogo from "@/assets/logos/vca-logo.png";
 import vcaRealLogo from "@/assets/logos/vca-real-logo.png";
 import centralaLogo from "@/assets/logos/centrala-laboratorija-logo.png";
 import ltvLogo from "@/assets/logos/ltv-official-logo.png";
+import rigasVeselibasLogo from "@/assets/rigas-veselibas-centrs-logo.jpg";
 const Index = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen bg-gradient-hero">
@@ -178,9 +179,7 @@ const Index = () => {
             <Card className="shadow-elegant border border-border/40 hover:shadow-card transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <span className="text-primary font-bold text-sm">RVC</span>
-                  </div>
+                  <img src={rigasVeselibasLogo} alt="Rīgas veselības centrs" className="w-12 h-12 object-contain rounded-lg" />
                   <div>
                     <h4 className="font-semibold text-foreground">Rīgas veselības centrs</h4>
                     <p className="text-sm text-muted-foreground">Pašvaldības veselības centrs</p>
