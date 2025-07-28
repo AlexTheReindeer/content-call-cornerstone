@@ -26,40 +26,27 @@ const DarborganizacijaPage = () => {
           </div>
         </div>
 
+        <div className="mb-8">
+          <p className="text-lg text-muted-foreground mb-4">
+            Nezaudē ienākumus, taupi laiku un ģenerē jaunus darījumus – šie ir trīs galvenie mūsu plānošanas moduļa motīvi.
+          </p>
+          <p className="text-muted-foreground">
+            Mūsu on-line kalendārs ir ērti pielāgojams visdažādākajiem mērķiem un vajadzībām. Kā lielākas komandas ar standartizētiem procesiem, tā mazāki kolektīvi vai pat individuāli specialist – katrs atradīs kādas ērtības mūsu kalendārā.
+          </p>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5 text-primary" />
-                  Kalendārs un plānošana
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Viegli plānojiet tikšanās, uzdevumus un atgādinājumus. Integrēts kalendārs ar 
-                  automatizētiem paziņojumiem un resursu rezervāciju.
-                </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Resursu rezervācija</li>
-                  <li>• Automatizēti atgādinājumi</li>
-                  <li>• Komandas kalendārs</li>
-                  <li>• Atkārtoti notikumi</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
                   <Clock className="h-5 w-5 text-primary" />
-                  Atgādinājumi un paziņojumi
+                  Atgādinājumi
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Automatizēti atgādinājumi klientiem par gaidāmajiem pasākumiem. 
-                  SMS, WhatsApp un e-pasta paziņojumi ar personalizētiem ziņojumiem.
+                  Automatizē atgādinājuma sūtīšanu WhatsApp, SMS vai veic robotzvanus un minimizē zaudējumus, kas rodas klientiem vai partneriem aizmirstot par plānoto tikšanos. Darot to automātiski nevis "ar roku", tu ietaupīsi savu vai darbinieku laiku, kā arī izslēgsi kļūdu iespējamību.
                 </p>
               </CardContent>
             </Card>
@@ -67,14 +54,13 @@ const DarborganizacijaPage = () => {
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <FileText className="h-5 w-5 text-primary" />
-                  Atskaites un analītikas
+                  <Users className="h-5 w-5 text-primary" />
+                  Online pieraksti
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Detalizētas atskaites par darba efektivitāti, klientu aktivitāti un komandas sniegumu. 
-                  Eksportējiet datus Excel vai PDF formātā.
+                  Dod iespēju savam klientiem jebkurā laikā pierakstīties uz apmeklējumu – atver tiešsaistes rezervācijas sistēmu. Rezervācijas sistēmā būs iespējams pierakstīties uz tiem brīvajiem laikiem un tiem pakalpojumiem, ko uzskatāt par nepieciešamu. Pārbaudi pieteicēja identitāti vai pieprasi avansā maksājumu, lai izskaustu viltus pierakstus.
                 </p>
               </CardContent>
             </Card>
@@ -83,51 +69,12 @@ const DarborganizacijaPage = () => {
           <div className="space-y-6">
             <Card className="shadow-card bg-gradient-secondary">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-secondary-foreground mb-4">
-                  Uzdevumu pārvaldība
+                <h3 className="text-2xl font-bold text-secondary-foreground mb-4 flex items-center gap-2">
+                  <CreditCard className="h-6 w-6" />
+                  Norēķini un finanses
                 </h3>
-                <p className="text-secondary-foreground/90 mb-6">
-                  Izveidojiet, piešķiriet un sekojiet uzdevumiem. Kanban tēla saskarne ar vilkšanas 
-                  un nomešanas funkcionalitāti, termiņu kontrole un progresa sekošana.
-                </p>
-                <Button variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30">
-                  Skatīt uzdevumu sistēmu
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-primary" />
-                  Komandas sadarbība
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  Efektīva komandas sadarbība ar komentāriem, failu koplietošanu un reāllaika 
-                  atjauninājumiem par projektu statusu.
-                </p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Iekšējie komentāri</li>
-                  <li>• Failu pielikumi</li>
-                  <li>• Darbību vēsture</li>
-                  <li>• Atbildīgo maiņa</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <CreditCard className="h-5 w-5 text-primary" />
-                  Klientu norēķini
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Integrēta norēķinu sistēma ar rēķinu izveidošanu, maksājumu sekošanu un 
-                  atgādinājumiem par nesamaksātajiem rēķiniem.
+                <p className="text-secondary-foreground/90">
+                  Piešķir plānotajam notikumam vērtību, saslēdz kopā ar kases aparātu un iegūsti funkcionējošu POS sistēmu. Dažādas pielāgojamas atskaites palīdzēs grāmatvedībā algu aprēķiniem un peļņas rādītāju analīzei.
                 </p>
               </CardContent>
             </Card>
