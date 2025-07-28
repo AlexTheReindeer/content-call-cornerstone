@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import KomunikacijaPage from "./pages/KomunikacijaPage";
 import DarborganizacijaPage from "./pages/DarborganizacijaPage";
 import OnlineApkalposanaPage from "./pages/OnlineApkalposanaPage";
+import ESFondiPage from "./pages/ESFondiPage";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/komunikacija" element={<KomunikacijaPage />} />
           <Route path="/darborganizacija" element={<DarborganizacijaPage />} />
           <Route path="/online-apkalpojana" element={<OnlineApkalposanaPage />} />
+          <Route path="/es-fondi" element={<ESFondiPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

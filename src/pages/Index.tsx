@@ -93,7 +93,7 @@ const Index = () => {
               content="Visi komunikācijas kanāli vienuviet. Multikanālu rīks, kas apvieno dažādu komunikācijas kanālu ziņas: Zvani, SMS, WhatsApp, e-pasti, Telegram. Integrācijas ar ML risinājumiem." 
               icon={<MessageSquare className="h-6 w-6 text-primary" />} 
               buttonText="Uzzināt vairāk"
-              onButtonClick={() => setIsRegistrationModalOpen(true)} 
+              onButtonClick={() => navigate('/komunikacija')}
             />
             
             <ContentCard 
@@ -101,7 +101,7 @@ const Index = () => {
               content="Organizē un plāno darbus un informē klientus par gaidāmām vizītēm un tikšanām. Kalendārds darbu plānošanai, atgādinājumu izsūtīšana SMS un WhatsApp, atskaites, klientu norēķini, utt Piesaisti klientus tiešsaistē 24/7" 
               icon={<Calendar className="h-6 w-6 text-primary" />} 
               buttonText="Uzzināt vairāk"
-              onButtonClick={() => setIsRegistrationModalOpen(true)} 
+              onButtonClick={() => navigate('/darborganizacija')}
             />
             
             <ContentCard 
@@ -109,7 +109,7 @@ const Index = () => {
               content="Mūsu plašā pieredze Eiropas Savienības fondu piesaistē un apgūšanā var palīdzēt veicināt jūsu biznesa izaugsmi, piesaistot Eiropas finansējumu. Nodrošināsim atbalstu gan projekta sagatavošanā un dokumentu iesniegšanā, gan arī tā īstenošanas laikā." 
               icon={<BarChart3 className="h-6 w-6 text-primary" />} 
               buttonText="Uzzināt vairāk"
-              onButtonClick={() => setIsRegistrationModalOpen(true)} 
+              onButtonClick={() => navigate('/es-fondi')} 
             />
           </div>
         </section>
