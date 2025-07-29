@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import CRMDiagram from "@/components/CRMDiagram";
 import ContentCard from "@/components/ContentCard";
 import RegistrationModal from "@/components/RegistrationModal";
+import InterestFormModal from "@/components/InterestFormModal";
 import { Calendar, Phone, MessageSquare, Users, BarChart3 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import teleGroupLogo from "@/assets/telegroup-new-logo.png";
@@ -17,6 +18,7 @@ import rigasVeselibasLogo from "/lovable-uploads/be06b95e-e6a0-4465-9443-b95fd90
 const Index = () => {
   const navigate = useNavigate();
   const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
+  const [isInterestFormModalOpen, setIsInterestFormModalOpen] = useState(false);
   return <div className="min-h-screen bg-gradient-hero">
       <Header />
       
@@ -220,12 +222,17 @@ const Index = () => {
                   Rezervē bezmaksas konsultāciju un uzzini, kā mūsu risinājums var uzlabot tavu biznesu. Mūsu eksperti ir gatavi palīdzēt.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 shadow-card rounded-full">
+                  <Button 
+                    size="lg" 
+                    variant="secondary" 
+                    className="bg-white text-primary hover:bg-white/90 shadow-card rounded-full transition-all duration-300 hover:scale-105"
+                    onClick={() => setIsInterestFormModalOpen(true)}
+                  >
                     <Calendar className="w-5 h-5 mr-2" />
                     Pieteikties sarunai
                   </Button>
                   <a href="tel:+37165025535">
-                    <Button size="lg" variant="outline" className="border-white/30 text-primary hover:bg-white/10 rounded-full">
+                    <Button size="lg" variant="outline" className="border-white/30 text-primary hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-105">
                       <Phone className="w-5 h-5 mr-2" />
                       Sazināties ar mums
                     </Button>
@@ -292,6 +299,10 @@ const Index = () => {
       <RegistrationModal 
         open={isRegistrationModalOpen} 
         onOpenChange={setIsRegistrationModalOpen} 
+      />
+      <InterestFormModal 
+        open={isInterestFormModalOpen} 
+        onOpenChange={setIsInterestFormModalOpen} 
       />
     </div>;
 };
