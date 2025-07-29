@@ -119,6 +119,58 @@ const KomunikacijaPage = () => {
           </div>
         </div>
       </main>
+      
+      {/* Footer */}
+      <footer className="bg-card border-t border-border py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <img src="/assets/telegroup-new-logo.png" alt="TeleGroup" className="h-10 w-auto mb-4" />
+              <p className="text-muted-foreground text-sm mt-4 max-w-xs">
+                TGCallSoft ir pilnīgs CRM risinājums, kas palīdz uzņēmumiem uzlabot klientu apkalpošanu un pārdošanas efektivitāti.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold text-foreground mb-4">Pakalpojumi</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="https://www.telegroup.lv/lv/sakaru-pakalpojumi/fiksetie-telefonijas-sakari/" className="text-muted-foreground hover:text-primary transition-colors">Sakaru pakalpojumi</a></li>
+                <li><a href="https://www.telegroup.lv/lv/internets/internets/" className="text-muted-foreground hover:text-primary transition-colors">Internets</a></li>
+                <li><a href="https://www.telegroup.lv/lv/iekartas-un-tehniskie-risinajumi/ip-pbx-telefonijas-centrale/" className="text-muted-foreground hover:text-primary transition-colors">IP PBX centrāle</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold text-foreground mb-4">Uzņēmums</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="https://www.telegroup.lv/lv/par-kompaniju/" className="text-muted-foreground hover:text-primary transition-colors">Par mums</a></li>
+                <li><a href="https://www.telegroup.lv/lv/kontakti/" className="text-muted-foreground hover:text-primary transition-colors">Kontakti</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold text-foreground mb-4">Kontakti</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center gap-2 text-muted-foreground">
+                  <Phone className="h-4 w-4" /> +371 677 99 000
+                </li>
+                <li className="flex items-center gap-2 text-muted-foreground">
+                  <MessageSquare className="h-4 w-4" /> info@telegroup.lv
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="mt-12 pt-6 border-t border-border/40 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Telegrupa Baltijā SIA. Visas tiesības aizsargātas.
+            </p>
+            <div className="flex gap-6 mt-4 md:mt-0">
+              <a href="https://www.telegroup.lv/lv/lietosanas-noteikumi/" className="text-muted-foreground hover:text-primary transition-colors text-sm">Lietošanas noteikumi</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
