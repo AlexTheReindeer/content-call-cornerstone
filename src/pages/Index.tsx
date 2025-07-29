@@ -276,10 +276,12 @@ const Index = () => {
               <h4 className="font-semibold text-foreground mb-4">Kontakti</h4>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2 text-muted-foreground">
-                  <Phone className="h-4 w-4" /> +371 677 99 000
+                  <Phone className="h-4 w-4" /> 
+                  <a href="tel:+37167799000" className="hover:text-primary transition-colors">+371 677 99 000</a>
                 </li>
                 <li className="flex items-center gap-2 text-muted-foreground">
-                  <MessageSquare className="h-4 w-4" /> info@telegroup.lv
+                  <MessageSquare className="h-4 w-4" /> 
+                  <a href="mailto:info@telegroup.lv" className="hover:text-primary transition-colors">info@telegroup.lv</a>
                 </li>
               </ul>
             </div>
