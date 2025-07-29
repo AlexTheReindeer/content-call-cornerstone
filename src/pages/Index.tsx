@@ -232,7 +232,7 @@ const Index = () => {
                     Pieteikties sarunai
                   </Button>
                   <a href="tel:+37165025535">
-                    <Button size="lg" variant="outline" className="border-white/30 text-primary hover:bg-white/10 rounded-full transition-all duration-300 hover:scale-105">
+                    <Button size="lg" variant="outline" className="border-white/30 text-primary hover:bg-white/90 rounded-full transition-all duration-300 hover:scale-105">
                       <Phone className="w-5 h-5 mr-2" />
                       Sazināties ar mums
                     </Button>
