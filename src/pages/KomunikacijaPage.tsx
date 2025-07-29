@@ -125,7 +125,7 @@ const KomunikacijaPage = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <img src="/assets/telegroup-new-logo.png" alt="TeleGroup" className="h-10 w-auto mb-4" />
+              <img src="/src/assets/telegroup-new-logo.png" alt="TeleGroup" className="h-10 w-auto mb-4" />
               <p className="text-muted-foreground text-sm mt-4 max-w-xs">
                 TGCallSoft ir pilnīgs CRM risinājums, kas palīdz uzņēmumiem uzlabot klientu apkalpošanu un pārdošanas efektivitāti.
               </p>
@@ -152,10 +152,12 @@ const KomunikacijaPage = () => {
               <h4 className="font-semibold text-foreground mb-4">Kontakti</h4>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2 text-muted-foreground">
-                  <Phone className="h-4 w-4" /> +371 677 99 000
+                  <Phone className="h-4 w-4" /> 
+                  <a href="tel:+37167799000" className="hover:text-primary transition-colors">+371 677 99 000</a>
                 </li>
                 <li className="flex items-center gap-2 text-muted-foreground">
-                  <MessageSquare className="h-4 w-4" /> info@telegroup.lv
+                  <MessageSquare className="h-4 w-4" /> 
+                  <a href="mailto:info@telegroup.lv" className="hover:text-primary transition-colors">info@telegroup.lv</a>
                 </li>
               </ul>
             </div>
