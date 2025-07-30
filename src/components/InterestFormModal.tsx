@@ -37,8 +37,8 @@ const InterestFormModal = ({ open, onOpenChange }: InterestFormModalProps) => {
         <iframe
           src="https://updates.digitalmaverick.lv/widget/form/JVq6iM85Zi5873qjcYV0"
           className="w-full h-[524px] border-none rounded-lg"
-          id="popup-JVq6iM85Zi5873qjcYV0" 
-          data-layout="{'id':'POPUP'}"
+          id="inline-JVq6iM85Zi5873qjcYV0" 
+          data-layout="{'id':'INLINE'}"
           data-trigger-type="alwaysShow"
           data-trigger-value=""
           data-activation-type="alwaysActivated"
@@ -47,7 +47,7 @@ const InterestFormModal = ({ open, onOpenChange }: InterestFormModalProps) => {
           data-deactivation-value=""
           data-form-name="Kalendāra pieraksta forma | Standarta"
           data-height="524"
-          data-layout-iframe-id="popup-JVq6iM85Zi5873qjcYV0"
+          data-layout-iframe-id="inline-JVq6iM85Zi5873qjcYV0"
           data-form-id="JVq6iM85Zi5873qjcYV0"
           title="Kalendāra pieraksta forma | Standarta"
         />
