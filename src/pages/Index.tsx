@@ -16,6 +16,7 @@ import centralaLogo from "@/assets/logos/centrala-laboratorija-logo.png";
 import ltvLogo from "@/assets/logos/ltv-official-logo.png";
 import rigasVeselibasLogo from "/lovable-uploads/be06b95e-e6a0-4465-9443-b95fd903e0ba.png";
 const Index = () => {
+  console.log("Index component loaded successfully"); // Debug log to force refresh
   const navigate = useNavigate();
   const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
