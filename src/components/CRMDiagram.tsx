@@ -11,7 +11,7 @@ const CRMDiagram = () => {
   const bottomServices = [
     { name: "Komunikācija", icon: MessageCircle, color: "text-primary" },
     { name: "Klientu vadība", icon: Users, color: "text-secondary" },
-    { name: "Pārdošana un mārketings", icon: TrendingUp, color: "text-accent" },
+    { name: "Pārdošana un mārketings", icon: TrendingUp, color: "text-primary" },
     { name: "Analītika un kontrole", icon: BarChart3, color: "text-muted-foreground" }
   ];
 
