@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { useEffect } from "react";
 
 interface InterestFormModalProps {
   open: boolean;
@@ -8,8 +7,8 @@ interface InterestFormModalProps {
 
 const InterestFormModal = ({ open, onOpenChange }: InterestFormModalProps) => {
   useEffect(() => {
-    // Load the form embed script when modal opens
     if (open) {
+      // Load the form embed script when modal opens
       const script = document.createElement('script');
       script.src = 'https://updates.digitalmaverick.lv/js/form_embed.js';
       script.async = true;
@@ -17,36 +16,43 @@ const InterestFormModal = ({ open, onOpenChange }: InterestFormModalProps) => {
 
       return () => {
         // Cleanup script when modal closes
-        document.body.removeChild(script);
+        if (document.body.contains(script)) {
+          document.body.removeChild(script);
+        }
       };
     }
   }, [open]);
 
+  if (!open) return null;
+
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-2xl max-h-[80vh] overflow-hidden p-0">
-        <DialogTitle className="sr-only">Kalendāra pieraksta forma</DialogTitle>
-        <div className="w-full h-[524px]">
-          <iframe
-            src="https://updates.digitalmaverick.lv/widget/form/JVq6iM85Zi5873qjcYV0"
-            className="w-full h-full border-none rounded-md"
-            id="popup-JVq6iM85Zi5873qjcYV0" 
-            data-layout="{'id':'POPUP'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Kalendāra pieraksta forma | Standarta"
-            data-height="524"
-            data-layout-iframe-id="popup-JVq6iM85Zi5873qjcYV0"
-            data-form-id="JVq6iM85Zi5873qjcYV0"
-            title="Kalendāra pieraksta forma | Standarta"
-          />
-        </div>
-      </DialogContent>
-    </Dialog>
+    <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+      <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-hidden relative">
+        <button 
+          onClick={() => onOpenChange(false)}
+          className="absolute top-4 right-4 z-10 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition-colors"
+        >
+          ✕
+        </button>
+        <iframe
+          src="https://updates.digitalmaverick.lv/widget/form/JVq6iM85Zi5873qjcYV0"
+          className="w-full h-[524px] border-none rounded-lg"
+          id="popup-JVq6iM85Zi5873qjcYV0" 
+          data-layout="{'id':'POPUP'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Kalendāra pieraksta forma | Standarta"
+          data-height="524"
+          data-layout-iframe-id="popup-JVq6iM85Zi5873qjcYV0"
+          data-form-id="JVq6iM85Zi5873qjcYV0"
+          title="Kalendāra pieraksta forma | Standarta"
+        />
+      </div>
+    </div>
   );
 };
 
