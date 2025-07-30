@@ -137,7 +137,9 @@ const OnlineApkalposanaPage = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <img src="/src/assets/telegroup-new-logo.png" alt="TeleGroup" className="h-10 w-auto mb-4" />
+              <Link to="/">
+                <img src="/src/assets/telegroup-new-logo.png" alt="TeleGroup" className="h-10 w-auto mb-4 hover:opacity-80 transition-opacity cursor-pointer" />
+              </Link>
               <p className="text-muted-foreground text-sm mt-4 max-w-xs">
                 TGCallSoft ir pilnīgs CRM risinājums, kas palīdz uzņēmumiem uzlabot klientu apkalpošanu un pārdošanas efektivitāti.
               </p>

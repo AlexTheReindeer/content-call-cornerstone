@@ -29,7 +29,7 @@ const Header = () => {
             <img 
               src={teleGroupLogo} 
               alt="TeleGroup" 
-              className="h-[150px] w-auto"
+              className="h-[105px] w-auto"
             />
           </div>
           
