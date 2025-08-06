@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
+import InterestFormModal from "@/components/InterestFormModal";
 import { BarChart3, ArrowLeft, Euro, FileCheck, Target, Users2, Phone, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const ESFondiPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-hero">
       <Header />
@@ -76,7 +80,11 @@ const ESFondiPage = () => {
                 <p className="text-secondary-foreground/90 mb-6">
                   <strong>Atbalsta intensitāte – 100%.</strong>
                 </p>
-                <Button variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30">
+                <Button 
+                  variant="outline" 
+                  className="bg-white/20 border-white/40 text-white hover:bg-white/30"
+                  onClick={() => setIsModalOpen(true)}
+                >
                   Pieteikties testēšanai
                 </Button>
               </CardContent>
@@ -138,6 +146,11 @@ const ESFondiPage = () => {
           </div>
         </div>
       </footer>
+      
+      <InterestFormModal 
+        open={isModalOpen} 
+        onOpenChange={setIsModalOpen} 
+      />
     </div>
   );
 };
